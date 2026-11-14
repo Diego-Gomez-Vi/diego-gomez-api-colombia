@@ -15,12 +15,14 @@ async function cargarAtracciones() {
 
         const attractions = await response.json();
 
-        console.log("PRIMERA ATRACCION");
-        console.dir(attractions[0]);
-
         loading.style.display = "none";
 
         attractions.slice(0, 20).forEach(attraction => {
+
+            const descripcion =
+                attraction.description?.length > 350
+                    ? attraction.description.substring(0, 350) + "..."
+                    : attraction.description;
 
             container.innerHTML += `
                 <article class="card">
@@ -41,7 +43,7 @@ async function cargarAtracciones() {
                         </p>
 
                         <p>
-                            ${attraction.description || "Sin descripción disponible."}
+                            ${descripcion || "Sin descripción disponible."}
                         </p>
 
                     </div>
