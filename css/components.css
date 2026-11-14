@@ -70,9 +70,6 @@
 .card-content p {
     margin-bottom: 1.5rem;
     text-align: justify;
-}
-
-.card-content p:last-child {
     display: -webkit-box;
     -webkit-line-clamp: 12;
     -webkit-box-orient: vertical;
