@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos Típicos | Portal Colombia</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <div class="logo-container">
+                <img
+                    src="./img/logo-colombia.jpg"
+                    alt="Logo Portal Colombia"
+                >
+
+                <h1>Portal Colombia</h1>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="atracciones.html">Atracciones</a></li>
+                    <li><a href="platos.html" class="active">Platos Típicos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero platos-hero">
+        <div class="container">
+
+            <h2>Platos Típicos de Colombia</h2>
+
+            <p>
+                Descubre algunos de los platos más representativos
+                de la gastronomía colombiana.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <section class="dishes-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Sabores de Colombia
+                </h2>
+
+                <!-- Mensaje de carga -->
+                <div
+                    id="loading"
+                    class="loading-message"
+                >
+                    Cargando platos típicos...
+                </div>
+
+                <!-- Mensaje de error -->
+                <div
+                    id="error"
+                    class="error-message"
+                    style="display: none;"
+                >
+                    Error al cargar los platos típicos.
+                </div>
+
+                <!-- Cards generadas por JS -->
+                <div
+                    id="dishes-container"
+                    class="cards-grid"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>Portal Colombia</h3>
+
+            <p>
+                Explora la riqueza turística y gastronómica
+                de Colombia mediante información obtenida
+                dinámicamente desde la API Colombia.
+            </p>
+
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="atracciones.html">Atracciones</a>
+                <a href="platos.html">Platos Típicos</a>
+            </div>
+
+            <p class="footer-copy">
+                © 2026 Diego Gómez - Proyecto Académico JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="./js/platos.js"></script>
+
+</body>
+</html>
