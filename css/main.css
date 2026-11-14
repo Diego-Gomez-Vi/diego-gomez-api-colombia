@@ -1,0 +1,98 @@
+/* ===================================
+   VARIABLES
+=================================== */
+
+:root {
+    --color-primary: #fcd116;
+    --color-secondary: #003893;
+    --color-accent: #ce1126;
+
+    --color-dark: #1f2937;
+    --color-text: #4b5563;
+    --color-light: #f9fafb;
+    --color-white: #ffffff;
+
+    --radius: 12px;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    --transition: all 0.3s ease;
+}
+
+/* ===================================
+   RESET
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================================
+   CONFIGURACIÓN GLOBAL
+=================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+/* ===================================
+   ELEMENTOS GENERALES
+=================================== */
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+/* ===================================
+   TIPOGRAFÍA
+=================================== */
+
+h1,
+h2,
+h3 {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--color-text);
+}
+
+/* ===================================
+   UTILIDADES
+=================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
