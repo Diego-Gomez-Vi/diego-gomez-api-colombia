@@ -8,7 +8,7 @@ Proyecto desarrollado por **Diego Gómez** como parte del módulo de JavaScript.
 
 Portal Colombia es un sitio web informativo que permite explorar algunos de los principales atractivos turísticos y platos típicos de Colombia.
 
-La aplicación obtiene información en tiempo real desde la API Colombia utilizando peticiones `fetch()`, procesa los datos recibidos y los muestra dinámicamente en el DOM mediante tarjetas informativas.
+La aplicación obtiene información en tiempo real desde la API Colombia utilizando peticiones `fetch()`, procesa los datos recibidos y los muestra dinámicamente en el DOM mediante tarjetas informativas. Además, incorpora imágenes predeterminadas para garantizar una correcta visualización cuando alguna imagen proporcionada por la API no está disponible o presenta errores de carga.
 
 El proyecto fue desarrollado siguiendo una arquitectura organizada, separando el código HTML, CSS y JavaScript en archivos independientes para facilitar su mantenimiento y escalabilidad.
 
@@ -22,7 +22,8 @@ El proyecto fue desarrollado siguiendo una arquitectura organizada, separando el
 - Visualización de nombre, ciudad y descripción.
 - Presentación de los primeros 20 registros obtenidos.
 - Carga dinámica de tarjetas en el DOM.
-- Imágenes de respaldo cuando la API no proporciona una imagen válida.
+- Uso de imágenes proporcionadas por la API.
+- Implementación de imágenes de respaldo cuando alguna imagen no está disponible.
 
 ### 🍲 Platos Típicos
 
@@ -30,7 +31,7 @@ El proyecto fue desarrollado siguiendo una arquitectura organizada, separando el
 - Visualización de nombre, departamento, ingredientes y descripción.
 - Presentación de los primeros 20 registros obtenidos.
 - Carga dinámica de tarjetas en el DOM.
-- Imágenes de respaldo para mejorar la experiencia del usuario.
+- Implementación de imágenes de respaldo cuando alguna imagen no está disponible.
 
 ### ⚙️ Características Generales
 
@@ -42,6 +43,7 @@ El proyecto fue desarrollado siguiendo una arquitectura organizada, separando el
 - Mensajes de carga durante las peticiones.
 - Diseño responsive para dispositivos móviles, tabletas y escritorio.
 - Interfaz inspirada en los colores de la bandera de Colombia.
+- Uso de imágenes predeterminadas cuando alguna imagen proporcionada por la API no está disponible o presenta errores de carga.
 
 ---
 
